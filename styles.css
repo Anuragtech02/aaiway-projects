@@ -34,11 +34,11 @@ a {
 .container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   background: white;
   width: 90%;
+  padding: 50px;
   margin: auto;
 }
 .container h1 {
@@ -46,21 +46,22 @@ a {
   font-weight: 700;
 }
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: stretch;
   padding: 50px;
-  justify-content: space-around;
-  margin: 20px 0;
+  /* justify-content: space-around; */
+  margin: 20px auto;
   border-radius: 20px;
-  height: 60vh;
 }
 .card {
-  width: 400px;
-  height: 100%;
+  /* width: 400px; */
+  height: 500px;
   overflow: hidden;
   border-radius: 5px;
   background: #f2f2f2;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  margin: 0 20px;
+  margin: 20px;
   transition: all 0.2s ease-in-out;
 }
 .card:hover {
@@ -117,6 +118,8 @@ a {
   cursor: pointer;
   font-weight: 800;
 }
+@media screen and (max-width: 1500px) {
+}
 
 @media screen and (max-width: 900px) {
   .cards {
@@ -126,5 +129,18 @@ a {
   .card {
     margin: 20px auto;
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    padding: 50px 0;
+    grid-template-columns: repeat(auto-fill, minmax(90vw, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    height: 650px;
   }
 }
