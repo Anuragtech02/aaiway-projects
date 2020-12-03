@@ -8,9 +8,8 @@ a {
   color: transparent;
   text-decoration: none;
 }
-.logo h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
+.logo img {
+  max-width: 50px;
 }
 .navbar {
   display: flex;
@@ -118,7 +117,10 @@ a {
   cursor: pointer;
   font-weight: 800;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
+  .navlinks {
+    width: 40% !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -142,5 +144,11 @@ a {
 @media screen and (max-width: 500px) {
   .card {
     height: 650px;
+  }
+  .navlinks {
+    width: 70% !important;
+  }
+  .navbar {
+    padding: 20px;
   }
 }
