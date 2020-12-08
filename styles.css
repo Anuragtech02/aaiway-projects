@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.1);
+  width: 10px;
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+body::-webkit-scrollbar-thumb {
+  background: #fb5100;
+}
 a {
   color: transparent;
   text-decoration: none;
