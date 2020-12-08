@@ -209,9 +209,9 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .navlinks {
+  /* .navlinks {
     width: 40% !important;
-  }
+  } */
   .about {
     flex-direction: column;
   }
@@ -259,9 +259,9 @@ a {
   .card .name h4 {
     font-size: 1.2rem;
   }
-  .navlinks {
+  /* .navlinks {
     width: 70% !important;
-  }
+  } */
   .navbar {
     padding: 20px;
   }
