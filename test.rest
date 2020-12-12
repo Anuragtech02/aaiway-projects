@@ -1,0 +1,9 @@
+POST https://aaiwayindia.com:5001/mail
+Content-Type: "application/json"
+
+{
+    "name" : "Anurag Pal",
+    "email" : "apal895@gmail.com",
+    "msg" : "Hello",
+    "subject": "Test",
+}
